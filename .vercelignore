@@ -1,0 +1,14 @@
+.git
+.local
+.impeccable
+node_modules
+dist
+release
+test-results
+.env
+.env.*
+.npmrc
+*.sqlite
+*.sqlite-*
+*.db
+*.log

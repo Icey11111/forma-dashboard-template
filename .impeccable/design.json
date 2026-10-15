@@ -1,0 +1,362 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-08T19:32:49Z",
+  "title": "Design System: Forma",
+  "extensions": {
+    "colorMeta": {
+      "primary": {
+        "role": "primary",
+        "displayName": "Studio Violet"
+      },
+      "primary-foreground": {
+        "role": "neutral",
+        "displayName": "Action White"
+      },
+      "accent": {
+        "role": "primary",
+        "displayName": "Selected Lilac"
+      },
+      "accent-foreground": {
+        "role": "primary",
+        "displayName": "Selection Violet"
+      },
+      "ring": {
+        "role": "primary",
+        "displayName": "Focus Violet"
+      },
+      "secondary": {
+        "role": "primary",
+        "displayName": "Soft Violet Surface"
+      },
+      "secondary-foreground": {
+        "role": "primary",
+        "displayName": "Quiet Violet"
+      },
+      "background": {
+        "role": "neutral",
+        "displayName": "Cool Paper"
+      },
+      "foreground": {
+        "role": "neutral",
+        "displayName": "Graphite"
+      },
+      "card": {
+        "role": "neutral",
+        "displayName": "White Surface"
+      },
+      "muted-foreground": {
+        "role": "neutral",
+        "displayName": "Quiet Grey Text"
+      },
+      "muted": {
+        "role": "neutral",
+        "displayName": "Quiet Grey Surface"
+      },
+      "border": {
+        "role": "neutral",
+        "displayName": "Fine Divider"
+      },
+      "input": {
+        "role": "neutral",
+        "displayName": "Field Stroke"
+      },
+      "success": {
+        "role": "secondary",
+        "displayName": "Forest Status"
+      },
+      "success-bg": {
+        "role": "secondary",
+        "displayName": "Forest Status Surface"
+      },
+      "warning": {
+        "role": "secondary",
+        "displayName": "Amber Status"
+      },
+      "warning-bg": {
+        "role": "secondary",
+        "displayName": "Amber Status Surface"
+      },
+      "info": {
+        "role": "secondary",
+        "displayName": "Slate Blue Status"
+      },
+      "info-bg": {
+        "role": "secondary",
+        "displayName": "Slate Blue Status Surface"
+      },
+      "destructive": {
+        "role": "secondary",
+        "displayName": "Rose Alert"
+      },
+      "chart-1": {
+        "role": "tertiary",
+        "displayName": "Chart Violet"
+      },
+      "chart-2": {
+        "role": "tertiary",
+        "displayName": "Chart Lilac"
+      },
+      "chart-3": {
+        "role": "tertiary",
+        "displayName": "Chart Sage"
+      },
+      "chart-4": {
+        "role": "tertiary",
+        "displayName": "Chart Blue Grey"
+      },
+      "dark-background": {
+        "role": "neutral",
+        "displayName": "Evening Canvas"
+      },
+      "dark-card": {
+        "role": "neutral",
+        "displayName": "Evening Card"
+      },
+      "dark-primary": {
+        "role": "primary",
+        "displayName": "Evening Violet"
+      },
+      "blue-primary": {
+        "role": "primary",
+        "displayName": "Optional Studio Blue"
+      },
+      "green-primary": {
+        "role": "primary",
+        "displayName": "Optional Studio Green"
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Metric Display",
+        "purpose": "Large tabular performance values."
+      },
+      "headline": {
+        "displayName": "Page Headline",
+        "purpose": "Page hierarchy and orientation."
+      },
+      "title": {
+        "displayName": "Panel Title",
+        "purpose": "Grouped sections and record panels."
+      },
+      "body": {
+        "displayName": "Base Body",
+        "purpose": "Base application copy and readable explanations."
+      },
+      "body-compact": {
+        "displayName": "Compact Body",
+        "purpose": "Page descriptions and field text."
+      },
+      "label": {
+        "displayName": "Field Label",
+        "purpose": "Visible field names and compact form hierarchy."
+      },
+      "label-small": {
+        "displayName": "Small Label",
+        "purpose": "Navigation group captions and small summaries."
+      },
+      "control": {
+        "displayName": "Control",
+        "purpose": "Global compact actions and record text."
+      },
+      "brand": {
+        "displayName": "Wordmark",
+        "purpose": "The fixed Forma name in the workspace rail."
+      }
+    },
+    "shadows": [
+      {
+        "name": "sheet-lift",
+        "value": "0 10px 15px -3px #0000001a, 0 4px 6px -4px #0000001a",
+        "purpose": "Compiled shadow-lg used by the navigation and record sheets."
+      },
+      {
+        "name": "toast-lift",
+        "value": "0 8px 25px #00000018",
+        "purpose": "Transient status or error feedback over the workspace."
+      }
+    ],
+    "motion": [
+      {
+        "name": "css-state",
+        "value": "150ms ease",
+        "purpose": "Authored navigation color/background, workspace switcher, and media-border transitions."
+      },
+      {
+        "name": "primitive-state",
+        "value": "150ms cubic-bezier(0.4, 0, 0.2, 1)",
+        "purpose": "Compiled Tailwind default transitions for primitive buttons, fields, rows, and tabs."
+      },
+      {
+        "name": "shared-navigation",
+        "value": "180ms; reduced-motion duration: 0ms",
+        "purpose": "The active background uses shared-layout identities for desktop and mobile separately."
+      },
+      {
+        "name": "metric-spring",
+        "value": "mass: 0.8; stiffness: 160; damping: 25",
+        "purpose": "The shared Count wrapper's Cult UI number motion; a formatted final value remains accessible."
+      },
+      {
+        "name": "sheet-transition",
+        "value": "200ms cubic-bezier(0.4, 0, 0.2, 1); entering/exiting offset: 2.5rem",
+        "purpose": "Record and navigation sheets; their backdrop opacity uses 150ms."
+      },
+      {
+        "name": "dialog-transition",
+        "value": "100ms; opacity fade and scale 0.95 to 1",
+        "purpose": "Existing search, guide, and confirmation overlays."
+      },
+      {
+        "name": "reduced-motion",
+        "value": "0.01ms CSS animation/transition duration; scroll-behavior: auto",
+        "purpose": "User motion preferences also disable shared navigation movement and replace rolling numbers with formatted static values."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "desktop-compact-max",
+        "value": "1250px"
+      },
+      {
+        "name": "workspace-compact-max",
+        "value": "1050px"
+      },
+      {
+        "name": "mobile-navigation-max",
+        "value": "800px"
+      },
+      {
+        "name": "mobile-layout-max",
+        "value": "600px"
+      },
+      {
+        "name": "narrow-mobile-max",
+        "value": "360px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "The implemented default action, with compact global sizing and primary tint hover.",
+      "html": "<button type=\"button\" class=\"ds-btn-primary\"><svg width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" aria-hidden=\"true\"><path d=\"M12 5v14M5 12h14\"/></svg>Add product</button>",
+      "css": ".ds-btn-primary{display:inline-flex;align-items:center;justify-content:center;gap:7px;height:34px;padding:0 12px;border:1px solid transparent;border-radius:var(--radius,.875rem);font-family:var(--font-sans, 'DM Sans', sans-serif);font-size:11px;font-weight:400;line-height:1.5;white-space:nowrap;cursor:pointer;transition:all .15s cubic-bezier(.4,0,.2,1);background:var(--primary,#7560cf);color:var(--primary-foreground,#fff);}.ds-btn-primary:hover:not(:disabled){background:color-mix(in oklab,var(--primary,#7560cf) 80%,transparent);}.ds-btn-primary:focus-visible{border-color:var(--ring,#8c77dc);outline:2px solid var(--ring,#8c77dc);outline-offset:3px;box-shadow:0 0 0 3px color-mix(in oklab,var(--ring,#8c77dc) 50%,transparent)}.ds-btn-primary:active:not(:disabled):not([aria-haspopup]){transform:translateY(1px)}.ds-btn-primary:disabled{pointer-events:none;opacity:.5}@media(prefers-reduced-motion:reduce){.ds-btn-primary{transition-duration:.01ms}}"
+    },
+    {
+      "name": "Outline Button",
+      "kind": "button",
+      "refersTo": "button-outline",
+      "description": "The implemented quiet bordered action used for exports and secondary operations.",
+      "html": "<button type=\"button\" class=\"ds-btn-outline\"><svg width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4\"/><path d=\"m7 10 5 5 5-5\"/><path d=\"M12 15V3\"/></svg>Export data</button>",
+      "css": ".ds-btn-outline{display:inline-flex;align-items:center;justify-content:center;gap:7px;height:34px;padding:0 12px;border:1px solid transparent;border-radius:var(--radius,.875rem);font-family:var(--font-sans, 'DM Sans', sans-serif);font-size:11px;font-weight:400;line-height:1.5;white-space:nowrap;cursor:pointer;transition:all .15s cubic-bezier(.4,0,.2,1);border-color:var(--border,#e9e9ee);background:var(--background,#fafafb);color:var(--foreground,#282832);}.ds-btn-outline:hover:not(:disabled){background:var(--muted,#f2f2f6);}.ds-btn-outline:focus-visible{border-color:var(--ring,#8c77dc);outline:2px solid var(--ring,#8c77dc);outline-offset:3px;box-shadow:0 0 0 3px color-mix(in oklab,var(--ring,#8c77dc) 50%,transparent)}.ds-btn-outline:active:not(:disabled):not([aria-haspopup]){transform:translateY(1px)}.ds-btn-outline:disabled{pointer-events:none;opacity:.5}:host-context(.dark) .ds-btn-outline{border-color:var(--input,#44454f);background:color-mix(in oklab,var(--input,#44454f) 30%,transparent)}:host-context(.dark) .ds-btn-outline:hover:not(:disabled){background:color-mix(in oklab,var(--input,#44454f) 50%,transparent)}@media(prefers-reduced-motion:reduce){.ds-btn-outline{transition-duration:.01ms}}"
+    },
+    {
+      "name": "Ghost Button",
+      "kind": "button",
+      "refersTo": "button-ghost",
+      "description": "The implemented transparent quiet action; panel instances can override size and text tone.",
+      "html": "<button type=\"button\" class=\"ds-btn-ghost\">View all</button>",
+      "css": ".ds-btn-ghost{display:inline-flex;align-items:center;justify-content:center;gap:7px;height:34px;padding:0 12px;border:1px solid transparent;border-radius:var(--radius,.875rem);font-family:var(--font-sans, 'DM Sans', sans-serif);font-size:11px;font-weight:400;line-height:1.5;white-space:nowrap;cursor:pointer;transition:all .15s cubic-bezier(.4,0,.2,1);background:transparent;color:var(--foreground,#282832);}.ds-btn-ghost:hover:not(:disabled){background:var(--muted,#f2f2f6);}.ds-btn-ghost:focus-visible{border-color:var(--ring,#8c77dc);outline:2px solid var(--ring,#8c77dc);outline-offset:3px;box-shadow:0 0 0 3px color-mix(in oklab,var(--ring,#8c77dc) 50%,transparent)}.ds-btn-ghost:active:not(:disabled):not([aria-haspopup]){transform:translateY(1px)}.ds-btn-ghost:disabled{pointer-events:none;opacity:.5}:host-context(.dark) .ds-btn-ghost:hover:not(:disabled){background:color-mix(in oklab,var(--muted,#2b2c36) 50%,transparent)}@media(prefers-reduced-motion:reduce){.ds-btn-ghost{transition-duration:.01ms}}"
+    },
+    {
+      "name": "Destructive Button",
+      "kind": "button",
+      "refersTo": "button-destructive",
+      "description": "The rose tinted action used for resetting demo records.",
+      "html": "<button type=\"button\" class=\"ds-btn-destructive\">Reset demo</button>",
+      "css": ".ds-btn-destructive{display:inline-flex;align-items:center;justify-content:center;gap:7px;height:34px;padding:0 12px;border:1px solid transparent;border-radius:var(--radius,.875rem);font-family:var(--font-sans, 'DM Sans', sans-serif);font-size:11px;font-weight:400;line-height:1.5;white-space:nowrap;cursor:pointer;transition:all .15s cubic-bezier(.4,0,.2,1);background:color-mix(in oklab,var(--destructive,#bb4654) 10%,transparent);color:var(--destructive,#bb4654);}.ds-btn-destructive:hover:not(:disabled){background:color-mix(in oklab,var(--destructive,#bb4654) 20%,transparent);}.ds-btn-destructive:focus-visible{border-color:var(--ring,#8c77dc);outline:2px solid var(--ring,#8c77dc);outline-offset:3px;box-shadow:0 0 0 3px color-mix(in oklab,var(--ring,#8c77dc) 50%,transparent)}.ds-btn-destructive:active:not(:disabled):not([aria-haspopup]){transform:translateY(1px)}.ds-btn-destructive:disabled{pointer-events:none;opacity:.5}:host-context(.dark) .ds-btn-destructive{background:color-mix(in oklab,var(--destructive,#f091a0) 20%,transparent)}:host-context(.dark) .ds-btn-destructive:hover:not(:disabled){background:color-mix(in oklab,var(--destructive,#f091a0) 30%,transparent)}.ds-btn-destructive:focus-visible{border-color:color-mix(in oklab,var(--destructive,#bb4654) 40%,transparent);box-shadow:0 0 0 3px color-mix(in oklab,var(--destructive,#bb4654) 20%,transparent)}:host-context(.dark) .ds-btn-destructive:focus-visible{box-shadow:0 0 0 3px color-mix(in oklab,var(--destructive,#f091a0) 40%,transparent)}@media(prefers-reduced-motion:reduce){.ds-btn-destructive{transition-duration:.01ms}}"
+    },
+    {
+      "name": "Labelled Editor Field",
+      "kind": "input",
+      "refersTo": "input-editor",
+      "description": "The shared TextField composition with the record editor's 38px minimum input height.",
+      "html": "<div class=\"ds-field\"><label class=\"ds-field-label\" for=\"ds-business-name\">Business name</label><input class=\"ds-field-input\" id=\"ds-business-name\" value=\"Demo workspace\" aria-describedby=\"ds-business-hint\"><p class=\"ds-field-hint\" id=\"ds-business-hint\">A name for your business workspace.</p></div>",
+      "css": ".ds-field{display:flex;flex-direction:column;gap:8px;max-width:320px;color:var(--foreground,#282832);font-family:var(--font-sans, 'DM Sans', sans-serif);}.ds-field-label{font-size:12px;font-weight:500;line-height:1.375}.ds-field-input{min-width:0;min-height:38px;padding:4px 10px;border:1px solid var(--input,#e1e1e8);border-radius:var(--radius,.875rem);background:transparent;color:var(--foreground,#282832);font-family:var(--font-sans, 'DM Sans', sans-serif);font-size:12px;line-height:1.5;caret-color:var(--primary,#7560cf);transition:color .15s cubic-bezier(.4,0,.2,1),border-color .15s cubic-bezier(.4,0,.2,1)}.ds-field-input::placeholder{color:var(--muted-foreground,#686872)}.ds-field-input:focus-visible{outline:none;border-color:var(--ring,#8c77dc);box-shadow:0 0 0 3px color-mix(in oklab,var(--ring,#8c77dc) 50%,transparent)}.ds-field-input[aria-invalid=true]{border-color:var(--destructive,#bb4654);box-shadow:0 0 0 3px color-mix(in oklab,var(--destructive,#bb4654) 20%,transparent)}.ds-field-input:disabled{background:color-mix(in oklab,var(--input,#e1e1e8) 50%,transparent);opacity:.5;cursor:not-allowed;pointer-events:none}.ds-field-hint{margin:0;font-size:11px;line-height:1.5;color:var(--muted-foreground,#686872)}:host-context(.dark) .ds-field-input{background:color-mix(in oklab,var(--input,#44454f) 30%,transparent)}:host-context(.dark) .ds-field-input:disabled{background:color-mix(in oklab,var(--input,#44454f) 80%,transparent)}:host-context(.dark) .ds-field-input[aria-invalid=true]{border-color:color-mix(in oklab,var(--destructive,#f091a0) 50%,transparent);box-shadow:0 0 0 3px color-mix(in oklab,var(--destructive,#f091a0) 40%,transparent)}@media(prefers-reduced-motion:reduce){.ds-field-input{transition-duration:.01ms}}"
+    },
+    {
+      "name": "Workspace Navigation",
+      "kind": "nav",
+      "refersTo": "nav-item-active",
+      "description": "The actual grouped row pattern with a selected lilac background; shared-layout motion runs in the React component.",
+      "html": "<nav class=\"ds-navigation\" aria-label=\"Main navigation\"><p class=\"ds-nav-caption\">Workspace</p><button type=\"button\" class=\"ds-nav-item ds-nav-selected\" aria-current=\"page\"><span class=\"ds-nav-active-bg\"></span><svg width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.7\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><rect x=\"3\" y=\"3\" width=\"7\" height=\"9\" rx=\"1\"/><rect x=\"14\" y=\"3\" width=\"7\" height=\"5\" rx=\"1\"/><rect x=\"14\" y=\"12\" width=\"7\" height=\"9\" rx=\"1\"/><rect x=\"3\" y=\"16\" width=\"7\" height=\"5\" rx=\"1\"/></svg><span class=\"ds-nav-label\">Overview</span></button><button type=\"button\" class=\"ds-nav-item\"><svg width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.7\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"m6 2-3 4v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z\"/><path d=\"M3 6h18M16 10a4 4 0 0 1-8 0\"/></svg><span class=\"ds-nav-label\">Orders</span><span class=\"ds-nav-count\">8</span></button></nav>",
+      "css": ".ds-navigation{width:202px;font-family:var(--font-sans, 'DM Sans', sans-serif);}.ds-nav-caption{margin:0;padding:0 13px 9px;font-size:10px;font-weight:500;line-height:1.5;color:var(--muted-foreground,#686872)}.ds-nav-item{position:relative;display:flex;align-items:center;gap:12px;width:100%;min-height:39px;margin-bottom:3px;padding:8px 12px;border:0;border-radius:8px;background:transparent;color:var(--muted-foreground,#686872);text-align:left;font-family:var(--font-sans, 'DM Sans', sans-serif);font-size:12px;font-weight:400;line-height:1.5;cursor:pointer;transition:color .15s,background .15s}.ds-nav-item:hover{background:var(--muted,#f2f2f6);color:var(--foreground,#282832)}.ds-nav-item.ds-nav-selected{color:var(--accent-foreground,#6953b8);font-weight:600}.ds-nav-active-bg{position:absolute;inset:0;border-radius:8px;background:var(--accent,#f0edf9)}.ds-nav-item>svg,.ds-nav-label,.ds-nav-count{position:relative}.ds-nav-item>svg{flex-shrink:0}.ds-nav-label{flex:1}.ds-nav-count{margin-left:auto;padding:0 5px;border:1px solid var(--border,#e9e9ee);border-radius:5px;background:var(--card,#fff);color:var(--muted-foreground,#686872);font-size:10px;font-weight:400;line-height:17px}.ds-nav-item:focus-visible{outline:2px solid var(--ring,#8c77dc);outline-offset:3px}@media(prefers-reduced-motion:reduce){.ds-nav-item{transition-duration:.01ms}}"
+    },
+    {
+      "name": "Record Status",
+      "kind": "chip",
+      "refersTo": "status-success",
+      "description": "The shared Status tag's success, warning, and information tones, with labels that carry the meaning.",
+      "html": "<div class=\"ds-status-samples\"><span class=\"ds-status ds-status-success\"><span aria-hidden=\"true\"></span>Paid</span><span class=\"ds-status ds-status-warning\"><span aria-hidden=\"true\"></span>Processing</span><span class=\"ds-status ds-status-info\"><span aria-hidden=\"true\"></span>Shipped</span></div>",
+      "css": ".ds-status-samples{display:flex;gap:8px;flex-wrap:wrap}.ds-status{display:inline-flex;align-items:center;gap:5px;padding:4px 7px;border-radius:5px;font-family:var(--font-sans, 'DM Sans', sans-serif);font-size:9px;line-height:1.1;white-space:nowrap}.ds-status>span{width:4px;height:4px;border-radius:50%;background:currentColor}.ds-status-success{background:var(--success-bg,#edf6f1);color:var(--success,#327059)}.ds-status-warning{background:var(--warning-bg,#faf3e5);color:var(--warning,#856022)}.ds-status-info{background:var(--info-bg,#edf3fa);color:var(--info,#477197)}"
+    },
+    {
+      "name": "Workspace Panel",
+      "kind": "card",
+      "refersTo": "panel",
+      "description": "The implemented Panel container and detail-line pattern, with a quiet header and flat surface.",
+      "html": "<section class=\"ds-panel\" aria-labelledby=\"ds-panel-title\"><header class=\"ds-panel-header\"><div><h2 id=\"ds-panel-title\">Business details</h2><p>A few details that make the workspace yours.</p></div></header><div class=\"ds-panel-body\"><div class=\"ds-detail-line\"><span>Business name</span><strong>Demo workspace</strong></div></div></section>",
+      "css": ".ds-panel{min-width:0;overflow:hidden;margin-bottom:23px;border:1px solid var(--border,#e9e9ee);border-radius:13px;background:var(--card,#fff);color:var(--card-foreground,#282832);font-family:var(--font-sans, 'DM Sans', sans-serif);}.ds-panel-header{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:21px 23px 14px}.ds-panel-header h2{margin:0;font-size:13px;font-weight:600;letter-spacing:-.1px;line-height:1.5}.ds-panel-header p{margin:5px 0 0;font-size:10px;line-height:1.5;color:var(--muted-foreground,#686872)}.ds-panel-body{padding:10px 23px 23px}.ds-detail-line{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:15px 0;border-bottom:1px solid var(--border,#e9e9ee);font-size:11px;line-height:1.5}.ds-detail-line strong{font-weight:500}@media(max-width:600px){.ds-panel{margin-bottom:18px}.ds-panel-header{padding:19px 18px 14px}}"
+    },
+    {
+      "name": "Settings Line Tabs",
+      "kind": "nav",
+      "refersTo": "tabs-line-active",
+      "description": "The settings screen's implemented line variant; Base UI supplies selection and keyboard handling in the application.",
+      "html": "<div class=\"ds-tabs-line\" role=\"tablist\" aria-label=\"Settings\"><button type=\"button\" class=\"ds-tab ds-tab-active\" role=\"tab\" aria-selected=\"true\" tabindex=\"0\">General</button><button type=\"button\" class=\"ds-tab\" role=\"tab\" aria-selected=\"false\" tabindex=\"-1\">Team</button><button type=\"button\" class=\"ds-tab\" role=\"tab\" aria-selected=\"false\" tabindex=\"-1\">Shipping</button><button type=\"button\" class=\"ds-tab\" role=\"tab\" aria-selected=\"false\" tabindex=\"-1\">Alerts</button></div>",
+      "css": ".ds-tabs-line{display:inline-flex;align-items:center;justify-content:center;gap:4px;height:32px;padding:3px;background:transparent;font-family:var(--font-sans, 'DM Sans', sans-serif);}.ds-tab{position:relative;display:inline-flex;align-items:center;justify-content:center;flex:1;gap:6px;height:calc(100% - 1px);padding:2px 6px;border:1px solid transparent;border-radius:calc(var(--radius,.875rem) - 2px);background:transparent;color:color-mix(in oklab,var(--foreground,#282832) 60%,transparent);font-family:var(--font-sans, 'DM Sans', sans-serif);font-size:14px;font-weight:400;line-height:1.5;white-space:nowrap;cursor:pointer;transition:all .15s cubic-bezier(.4,0,.2,1)}.ds-tab:hover{color:var(--foreground,#282832)}.ds-tab-active{color:var(--foreground,#282832)}.ds-tab::after{content:\"\";position:absolute;inset-inline:0;bottom:-5px;height:2px;background:var(--foreground,#282832);opacity:0;transition:opacity .15s cubic-bezier(.4,0,.2,1)}.ds-tab-active::after{opacity:1}.ds-tab:focus-visible{border-color:var(--ring,#8c77dc);outline:2px solid var(--ring,#8c77dc);outline-offset:3px;box-shadow:0 0 0 3px color-mix(in oklab,var(--ring,#8c77dc) 50%,transparent)}.ds-tab:disabled,.ds-tab[aria-disabled=true]{pointer-events:none;opacity:.5}:host-context(.dark) .ds-tab{color:var(--muted-foreground,#acaeba)}:host-context(.dark) .ds-tab:hover,:host-context(.dark) .ds-tab-active{color:var(--foreground,#eeeef3)}@media(prefers-reduced-motion:reduce){.ds-tab,.ds-tab::after{transition-duration:.01ms}}"
+    },
+    {
+      "name": "Records Table",
+      "kind": "custom",
+      "refersTo": "records-table",
+      "description": "The existing full record table treatment with named order links, quiet headers, semantic status, and right-aligned amounts.",
+      "html": "<div class=\"ds-table-container\"><table class=\"ds-records-table\"><thead><tr><th scope=\"col\">Order</th><th scope=\"col\">Customer</th><th scope=\"col\">Payment</th><th scope=\"col\" class=\"ds-table-right\">Total</th></tr></thead><tbody><tr><td><button type=\"button\" class=\"ds-record-link\">#1042</button></td><td>Demo customer</td><td><span class=\"ds-table-status\"><span aria-hidden=\"true\"></span>Paid</span></td><td class=\"ds-table-right\">$84.00</td></tr></tbody></table></div>",
+      "css": ".ds-table-container{width:100%;overflow-x:auto}.ds-records-table{width:100%;border-collapse:collapse;font-family:var(--font-sans, 'DM Sans', sans-serif);font-size:11px;line-height:1.5;color:var(--foreground,#282832);background:var(--card,#fff)}.ds-records-table th{height:34px;padding:7px 18px;background:var(--background,#fafafb);color:var(--muted-foreground,#686872);font-size:10px;font-weight:400;text-align:left;vertical-align:middle;white-space:nowrap}.ds-records-table td{height:65px;padding:14px 18px;vertical-align:middle;white-space:nowrap}.ds-records-table thead tr{border-bottom:1px solid var(--border,#e9e9ee)}.ds-records-table tbody tr{border-bottom:1px solid var(--border,#e9e9ee);transition:background-color .15s cubic-bezier(.4,0,.2,1)}.ds-records-table tbody tr:last-child{border:0}.ds-records-table tbody tr:hover{background:color-mix(in oklab,var(--muted,#f2f2f6) 50%,transparent)}.ds-records-table .ds-table-right{text-align:right}.ds-record-link{padding:0;border:0;border-radius:3px;background:transparent;color:var(--foreground,#282832);text-align:left;font-family:var(--font-sans, 'DM Sans', sans-serif);font-size:10px;font-weight:500;line-height:1.5;cursor:pointer}.ds-record-link:hover{color:var(--primary,#7560cf)}.ds-record-link:focus-visible{outline:2px solid var(--ring,#8c77dc);outline-offset:3px}.ds-table-status{display:inline-flex;align-items:center;gap:5px;padding:4px 7px;border-radius:5px;background:var(--success-bg,#edf6f1);color:var(--success,#327059);font-size:9px;line-height:1.1}.ds-table-status>span{width:4px;height:4px;border-radius:50%;background:currentColor}@media(max-width:600px){.ds-records-table{min-width:640px}.ds-records-table th,.ds-records-table td{padding-inline:13px}}@media(prefers-reduced-motion:reduce){.ds-records-table tbody tr{transition-duration:.01ms}}"
+    }
+  ],
+  "narrative": {
+    "northStar": "Contemporary Studio Specimen",
+    "overview": "Forma makes a business legible through precise hierarchy, grouped data, and editable records. The accepted world is the contemporary studio specimen (direction seed 939046f6): cool near-white, graphite type, restrained violet, and gently rounded controls. Its character is calm, exact, and approachable.\n\nThe interface is compact enough for repeated operations work while keeping page titles, performance figures, and record actions distinct. White surfaces, fine separators, and a quiet active navigation background establish order. Motion connects selection and changing figures; it remains brief and respects reduced-motion preferences.\n\nThis system describes the implemented React and TypeScript workspace with bundled DM Sans, Tailwind CSS v4, shadcn Base UI primitives, a Cult UI rolling number, and Motion navigation. The font, geometric Forma mark, palette relationships, and state hierarchy form the reusable identity.",
+    "keyCharacteristics": [
+      "A quiet cool canvas with white, finely bordered panels.",
+      "DM Sans throughout, compact labels, and tabular numeric figures.",
+      "One active accent, paired with a pale selection surface.",
+      "Text-labelled status tags and grouped, horizontally scrollable records.",
+      "Brief navigation continuity and reduced-motion alternatives."
+    ],
+    "rules": [
+      {
+        "name": "The Accent Continuity Rule",
+        "body": "Use the selected accent for primary actions, selection, focus, and the first two chart series. Preserve semantic success, warning, and information roles when changing the accent.",
+        "section": "colors"
+      },
+      {
+        "name": "The Measured Figures Rule",
+        "body": "Use tabular numerals for performance figures, totals, percentages, and aligned amounts. Preserve a readable final value when number motion is reduced.",
+        "section": "typography"
+      },
+      {
+        "name": "The Flat Surfaces Rule",
+        "body": "Keep workspace panels and metrics flat at rest. Use fine borders and surface tone for grouping; reserve shadows for sheets and transient feedback.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "Do use the semantic CSS variables so light, dark, blue, and green selections stay coherent.",
+      "Do use bundled DM Sans and the observed 400, 500, 600, and 700 weights.",
+      "Do keep compact controls, clear field labels, visible keyboard focus, and text-labelled statuses.",
+      "Do preserve grouped records, tabular numeric alignment, and horizontal overflow on narrow tables.",
+      "Do give animated numbers and charts an accessible text equivalent and honor reduced motion."
+    ],
+    "donts": [
+      "Don't substitute the old lighter muted text, success, warning, information, or blue action colors for the current CSS values.",
+      "Don't use chart pastels as small body text or status text.",
+      "Don't turn ordinary panels into floating surfaces with ambient shadows.",
+      "Don't remove labels from status tags or accessible names from icon-only controls.",
+      "Don't compress record columns until their content becomes illegible on mobile."
+    ]
+  }
+}
