@@ -2,6 +2,8 @@
 
 A reusable business and store-management dashboard. Fictional business, original branding, working local workflows, and a real SQLite database. Use it as a starting point for future projects or as a portfolio demo.
 
+[Open the live demo](https://forma-dashboard-template.vercel.app) · [Source on GitHub](https://github.com/Icey11111/forma-dashboard-template)
+
 ![Forma dashboard](docs/preview.png)
 
 ## Run locally

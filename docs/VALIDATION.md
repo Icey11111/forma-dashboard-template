@@ -6,6 +6,8 @@ The project moved to `C:\Portfolio\forma-dashboard-template` and has its own Git
 
 The source repository is `https://github.com/Icey11111/forma-dashboard-template`; source and deployment ignore rules exclude .local databases, environment files, installed dependencies, exports and generated builds. No client records or original application files were added. The Vercel project is connected to this independent repository.
 
+The public production URL is `https://forma-dashboard-template.vercel.app`. It returns HTTP 200 and the configured same-origin/WASM security policy. A hosted product stock edit persisted through a full document reload without any API requests; the test stock was then restored. All 13 hosted routes rendered, with no resources outside the application origin and no browser console errors or warnings.
+
 ## Original local validation — 2026-10-08
 
 Verified locally on 2026-10-08. This is an independent demonstration template; every included record is fictional.
